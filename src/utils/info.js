@@ -4,7 +4,7 @@ const { version } = require("../../package.json");
 const info = () =>
   welcome({
     title: "gPass CLI",
-    tagLine: "by GustavoNobreza forked by Padelis Theodosiou",
+    tagLine: "by GustavoNobreza forked from Padelis Theodosiou",
     bgColor: "#FADC00",
     color: "#000000",
     clear: true,
