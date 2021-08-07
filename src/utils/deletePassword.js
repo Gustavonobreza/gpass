@@ -6,7 +6,7 @@ const { data: dataFile } = require("./passwords.json");
 const deletePassword = (provider = "") => {
   if (!provider) return;
 
-  const data = dataFile.filter((item, ind) => {
+  const data = dataFile.filter((item) => {
     const providerInFile = item?.provider;
     if (!providerInFile) return true;
 
@@ -25,7 +25,7 @@ const deletePassword = (provider = "") => {
 };
 
 const deleteAllPassword = () => {
-  const data = dataFile.filter((item, ind) => {
+  const data = dataFile.filter((item) => {
     const providerInFile = item?.provider;
     if (!providerInFile) return true;
   });
